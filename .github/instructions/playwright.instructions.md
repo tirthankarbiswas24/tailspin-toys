@@ -54,7 +54,7 @@ test.describe('Movie Search Feature', () => {
     });
 
     await test.step('Verify search results', async () => {
-      // Verify the accessibility tree of the search results
+      // The accessibility snapshot verifies the complete user-facing result structure.
       await expect(page.getByRole('main')).toMatchAriaSnapshot(`
         - main:
           - heading "Garfield" [level=1]
@@ -89,4 +89,4 @@ Before finalizing tests, ensure:
 - [ ] Tests are grouped logically and follow a clear structure
 - [ ] Assertions are meaningful and reflect user expectations
 - [ ] Tests follow consistent naming conventions
-- [ ] Code is properly formatted and commented
+- [ ] Code follows the repository formatting rules and comments explain intent rather than restating code
