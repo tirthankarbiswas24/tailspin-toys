@@ -39,5 +39,9 @@ export default [
     languageOptions: {
       parser: tseslint.parser,
     },
+    rules: {
+      "comma-dangle": ["error", "always-multiline"],
+      semi: ["error", "always"],
+    },
   },
 ];
